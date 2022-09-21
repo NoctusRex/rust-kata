@@ -1,10 +1,10 @@
 use std::{collections::HashMap, fmt::Debug, io::stdin, str::FromStr, string::String};
 
-pub fn print(text: &str) {
+fn print(text: &str) {
     println!("{}", text);
 }
 
-pub fn new_line() {
+fn new_line() {
     println!();
 }
 

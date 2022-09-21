@@ -1,16 +1,16 @@
 use std::collections::HashMap;
 
-use crate::{cli, kata::Kata};
+use crate::kata::Kata;
 
 pub struct Test {}
 
 impl Test {
     fn function_1() {
-        cli::print("Hello World!");
+        println!("Hello World!");
     }
 
     fn function_2() {
-        cli::print("Hello World 2!");
+        println!("Hello World 2!");
     }
 }
 
