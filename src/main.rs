@@ -1,5 +1,5 @@
 use kata::Kata;
-use katas::{alphabet_cipher::AlphabetCipher, test::Test};
+use katas::{alphabet_cipher::AlphabetCipher, card_game_war::CardGameWar, test::Test};
 use std::collections::HashMap;
 
 mod cli;
@@ -12,6 +12,10 @@ fn main() {
     entries.insert(
         String::from("Alphabet Cipher"),
         &(|| start_kata::<AlphabetCipher>()),
+    );
+    entries.insert(
+        String::from("Card Game War"),
+        &(|| start_kata::<CardGameWar>()),
     );
 
     loop {
